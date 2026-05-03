@@ -2,13 +2,13 @@
      width="30%"
      style="padding: 10px">
 
-# << Título do projeto >>
+# << Sistema de Monitoramento de Energia Solar >>
 
-## << Descrição breve do domínio do problema >>
+## << Software que plotta a tensão gerada por placas solares no decorrer do dia. >>
 
 > Repositório destinado para o desenvolvimento do projeto final da discipliana PRG22107 - Programação orienta a objeto. 
 > 
-> Aluno: Nome do aluno  
+> Aluno: André L.   
 > Professor: Hugo Marcondes
 
 <p align=center><strong>SUMÁRIO</strong></p>
