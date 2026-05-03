@@ -13,11 +13,8 @@ A aplicação terá como principal objetivo coletar, processar e visualizar esse
 - O eixo **X** representará o tempo (horário das medições)
 - O eixo **Y** representará a tensão medida
 
-Além da visualização gráfica em tempo real, o sistema também fornecerá informações relevantes como:
-- Tensão máxima registrada
-- Tensão mínima registrada
 
-O usuário poderá ainda exportar os dados ou o gráfico gerado para análise posterior.
+O usuário poderá exportar os dados ou o gráfico gerado para análise posterior.
 
 ---
 
