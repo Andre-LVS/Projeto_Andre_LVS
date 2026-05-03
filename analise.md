@@ -25,7 +25,6 @@ O usuário poderá exportar os dados ou o gráfico gerado para análise posterio
 - Converter e interpretar os dados recebidos
 - Plotar gráfico da tensão ao longo do tempo
 - Atualizar o gráfico dinamicamente
-- Registrar tensão máxima e mínima
 - Exibir informações de horário associadas às medições
 - Permitir exportação dos dados coletados (ex: CSV)
 - Permitir exportação do gráfico (ex: imagem)
