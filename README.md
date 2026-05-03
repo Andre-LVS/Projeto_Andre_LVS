@@ -2,9 +2,9 @@
      width="30%"
      style="padding: 10px">
 
-# << Sistema de Monitoramento de Energia Solar >>
+#  Sistema de Monitoramento de Energia Solar 
 
-## << Software que plotta a tensão gerada por placas solares no decorrer do dia. >>
+## Software que plotta a tensão gerada por placas solares no decorrer do dia. 
 
 > Repositório destinado para o desenvolvimento do projeto final da discipliana PRG22107 - Programação orienta a objeto. 
 > 
