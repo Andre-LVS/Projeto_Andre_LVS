@@ -8,8 +8,8 @@ qt_standard_project_setup()
 qt_add_executable(code
     WIN32 MACOSX_BUNDLE
     main.cpp
-    mainwindow.cpp
-    mainwindow.h
+    janelaprincipal.cpp
+    janelaprincipal.h
 )
 
 target_link_libraries(code
