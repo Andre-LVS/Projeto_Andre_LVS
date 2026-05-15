@@ -7,7 +7,7 @@
 ## Software que plotta a tensão gerada por placas solares no decorrer do dia. 
 
 > Repositório destinado para o desenvolvimento do projeto final da discipliana PRG22107 - Programação orienta a objeto. 
-> Teste commit e push
+> 
 > Aluno: André L.   
 > Professor: Hugo Marcondes
 
