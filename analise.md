@@ -53,7 +53,7 @@ O usuário poderá exportar os dados ou o gráfico gerado para análise posterio
 
 ## Diagrama de Casos de Uso
 
-Apresentar o diagram de casos de uso, identificando as funcionalidades do sistema assim como os atores envolvidos
+![Diagrama casos de uso](img/Diagrama_casos_de_uso.drawio_1.png)
  
 ## Diagrama de Domínio do problema
 
