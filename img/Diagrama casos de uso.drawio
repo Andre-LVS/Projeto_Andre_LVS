@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="xCa-DpHSQw1oavzZPwVr">
+    <mxGraphModel dx="862" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=none;strokeColor=light-dark(#000000,#FFFFFF);" value="" vertex="1">
+          <mxGeometry height="560" width="260" x="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Usuário" vertex="1">
+          <mxGeometry height="60" width="30" x="160" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Iniciar monitoramento" vertex="1">
+          <mxGeometry height="50" width="120" x="330" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-3" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="wBdXuyY0VkE-WpYG48LS-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Visualizar gráfico em tempo real" vertex="1">
+          <mxGeometry height="60" width="130" x="325" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-24" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="wBdXuyY0VkE-WpYG48LS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Exportar dados/gráficos" vertex="1">
+          <mxGeometry height="50" width="120" x="330" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Configurar porta serial" vertex="1">
+          <mxGeometry height="50" width="120" x="330" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-25" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="wBdXuyY0VkE-WpYG48LS-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Receber dados de tensão" vertex="1">
+          <mxGeometry height="50" width="120" x="330" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-26" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="wBdXuyY0VkE-WpYG48LS-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Converter e interpretar dados" vertex="1">
+          <mxGeometry height="50" width="120" x="330" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Exibir horários das medições" vertex="1">
+          <mxGeometry height="50" width="120" x="330" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-12" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;div&gt;Arduino&lt;/div&gt;&lt;div&gt;(microcontrolador)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="570" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" target="wBdXuyY0VkE-WpYG48LS-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="180" as="sourcePoint" />
+            <mxPoint x="410" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-16" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-5" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" target="wBdXuyY0VkE-WpYG48LS-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="290" as="sourcePoint" />
+            <mxPoint x="232" y="328" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-17" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="wBdXuyY0VkE-WpYG48LS-6" value="&amp;nbsp; &amp;nbsp;&amp;nbsp;">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0427" y="-8" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="210" y="338" as="sourcePoint" />
+            <mxPoint x="410" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-18" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="wBdXuyY0VkE-WpYG48LS-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="350" as="sourcePoint" />
+            <mxPoint x="410" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-19" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="wBdXuyY0VkE-WpYG48LS-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="430" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-20" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-8" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="400" as="sourcePoint" />
+            <mxPoint x="560" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-21" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-9" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="400" as="sourcePoint" />
+            <mxPoint x="560" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wBdXuyY0VkE-WpYG48LS-22" edge="1" parent="1" source="wBdXuyY0VkE-WpYG48LS-10" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="550" as="sourcePoint" />
+            <mxPoint x="560" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

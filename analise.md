@@ -37,7 +37,6 @@ O usuário poderá exportar os dados ou o gráfico gerado para análise posterio
 - Baixo consumo de recursos computacionais
 - Atualização em tempo real com baixa latência
 - Código modular e bem estruturado
-- Compatibilidade com sistemas operacionais comuns (Linux/Windows)
 - Confiabilidade na leitura e armazenamento dos dados
 - Precisão na representação gráfica
 
@@ -49,7 +48,7 @@ O usuário poderá exportar os dados ou o gráfico gerado para análise posterio
 - Armazenamento em banco de dados
 - Interface gráfica mais avançada (GUI)
 - Acesso remoto aos dados (via rede)
-- Integração com sistemas de IoT
+
 
 ## Diagrama de Casos de Uso
 
@@ -57,7 +56,7 @@ O usuário poderá exportar os dados ou o gráfico gerado para análise posterio
  
 ## Diagrama de Domínio do problema
 
-Elaborar um diagrama conceitual do domínio do problema.
+![Diagrama domínio do problema](img/Diagrama_Dominio_problema.drawio.png)
 
 
 <div align="center">
