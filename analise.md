@@ -56,7 +56,7 @@ O usuário poderá exportar os dados ou o gráfico gerado para análise posterio
  
 ## Diagrama de Domínio do problema
 
-![Diagrama domínio do problema](img/Diagrama_Dominio_problema.drawio.png)
+![Diagrama domínio do problema](img/Diagrama_Dominio_problema.drawio.png).
 
 
 <div align="center">
