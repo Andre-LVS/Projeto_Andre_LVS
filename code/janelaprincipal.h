@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QtWidgets>
+#include "graficoplotter.h"
+#include "painelcontrole.h"
 
 class JanelaPrincipal : public QWidget
 {
@@ -14,8 +16,11 @@ public:
 
 private:
     QLabel          *tituloProjeto;
+    graficoPlotter  *grafico;
+    PainelControle  *painel;        // Widget lateral
     QPushButton     *sairBotao;
     QPushButton     *sobreBotao;
+    QHBoxLayout     *conteudoLayout; // Layout horizontal (painel + gráfico)
     QVBoxLayout     *mainLayout;
     QHBoxLayout     *botoesLayout;
 

@@ -6,7 +6,22 @@ JanelaPrincipal::JanelaPrincipal(QWidget *parent)
     //titulo============================================================
     tituloProjeto = new QLabel("<h1> Título do projeto</h1>");
     tituloProjeto->setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
-    //===================================================================
+
+    //Gráfico===================================================================
+    grafico = new graficoPlotter(this);
+    grafico->setMinimumHeight(400);
+
+    //Painel Lateral + Arduino======================================================
+    painel  = new PainelControle(this);
+/*
+    // Conecta tensão recebida do Arduino ao gráfico
+    connect(painel,  &PainelControle::novaTensao,
+            grafico, &graficoPlotter::receberTensao);
+
+    // Conecta mudança de tensão máxima ao gráfico
+    connect(painel,  &PainelControle::tensaoMaximaAlterada,
+            grafico, &graficoPlotter::setTensaoMaxima);
+*/
 
     //Botões inferiores===============================================================
 
@@ -21,13 +36,23 @@ JanelaPrincipal::JanelaPrincipal(QWidget *parent)
 
     //=================================================================================
 
+    // BLOCO: Layout horizontal — painel ocupa 1/3, gráfico 2/3
+    conteudoLayout = new QHBoxLayout();
+    conteudoLayout->addWidget(painel,  1); // stretch 1 = 1/3
+    conteudoLayout->addWidget(grafico, 2); // stretch 2 = 2/3
+
 
     mainLayout = new QVBoxLayout;
 
     mainLayout->addWidget(tituloProjeto);
+    //mainLayout->addWidget(grafico);
+    mainLayout->addLayout(conteudoLayout);
     mainLayout->addLayout(botoesLayout);
 
+
+    setMinimumSize(900, 600);
     setLayout(mainLayout);
+
 }
 
 void JanelaPrincipal::showAbout() {
