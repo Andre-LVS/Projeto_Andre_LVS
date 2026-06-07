@@ -228,8 +228,7 @@ void graficoPlotter::carregarDadosAnteriores()
     // --- Sub-bloco: Ajusta o horário para continuar de onde parou ---
     // O horário de início continua sendo o início do dia (primeiro ponto salvo)
     horarioInicio  = pontos.first().horario;            // Início real do dia
-    tempoDecorrido = pontos.first().horario.secsTo(     // Segundos já decorridos
-                         pontos.last().horario) + 1;
+    tempoDecorrido = horarioInicio.secsTo(QDateTime::currentDateTime());
 
     // --- Sub-bloco: Ajusta o eixo X para cobrir as 24h a partir do início ---
     eixoX->setMin(horarioInicio);
