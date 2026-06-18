@@ -11,6 +11,16 @@
 > Aluno: André L.   
 > Professor: Hugo Marcondes
 
+## Depedências:
+Ubuntu/Debian:
+
+>sudo apt install qt6-base-dev qt6-charts-dev qt6-serialport-dev
+
+Fedora:
+
+>sudo dnf install qt6-qtbase-devel qt6-qtcharts-devel qt6-qtserialport-devel gcc-c++ cmake
+
+
 <p align=center><strong>SUMÁRIO</strong></p>
 
 [**1. ANÁLISE ORIENTADA A OBJETO**](./analise.md)<br>

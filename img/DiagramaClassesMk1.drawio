@@ -1,0 +1,180 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="735" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-56" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=diamondThin;startFill=0;endArrow=none;endFill=0;" target="sKVXYVGA_9RBJEhANFU8-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="360" />
+              <mxPoint x="190" y="360" />
+            </Array>
+            <mxPoint x="200" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-57" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=diamondThin;startFill=0;" target="sKVXYVGA_9RBJEhANFU8-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="360" />
+              <mxPoint x="590" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" value="JanelaPrincipal" vertex="1">
+          <mxGeometry height="180" width="160" x="320" y="120" as="geometry">
+            <mxRectangle height="26" width="160" x="230" y="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--1" parent="zkfFHV4jXpPFQw0GAbJ--0" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-títuloProjeto:string" vertex="1">
+          <mxGeometry height="26" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--2" parent="zkfFHV4jXpPFQw0GAbJ--0" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-grafico:graficoPlotter" vertex="1">
+          <mxGeometry height="26" width="160" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--3" parent="zkfFHV4jXpPFQw0GAbJ--0" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-painel:painelControle" vertex="1">
+          <mxGeometry height="22" width="160" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-7" parent="zkfFHV4jXpPFQw0GAbJ--0" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-sairBotao:QPushButton" vertex="1">
+          <mxGeometry height="22" width="160" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-8" parent="zkfFHV4jXpPFQw0GAbJ--0" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-sobreBotao:QPushButton" vertex="1">
+          <mxGeometry height="22" width="160" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--4" parent="zkfFHV4jXpPFQw0GAbJ--0" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="10" width="160" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-9" parent="zkfFHV4jXpPFQw0GAbJ--0" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+showAbout():void" vertex="1">
+          <mxGeometry height="22" width="160" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-10" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" value="gráficoPlotter" vertex="1">
+          <mxGeometry height="280" width="200" x="90" y="410" as="geometry">
+            <mxRectangle height="26" width="160" x="230" y="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-11" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-Linhagrafico:QLineSeries" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-12" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-grafico:QChart" vertex="1">
+          <mxGeometry height="26" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-13" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-eixoX:QDateTimeAxis" vertex="1">
+          <mxGeometry height="22" width="200" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-14" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-eixoY:QValueAxis" vertex="1">
+          <mxGeometry height="22" width="200" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-15" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-horarioInicio:QDateTime" vertex="1">
+          <mxGeometry height="22" width="200" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-18" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-tempoDecorrido:int" vertex="1">
+          <mxGeometry height="22" width="200" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-20" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="mGerenciador:GerenciadorDados" vertex="1">
+          <mxGeometry height="22" width="200" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-16" parent="sKVXYVGA_9RBJEhANFU8-10" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="10" width="200" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-17" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+receberTensao():double&#xa;" vertex="1">
+          <mxGeometry height="22" width="200" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-21" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+setTensaoMax():double&#xa;" vertex="1">
+          <mxGeometry height="22" width="200" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-22" parent="sKVXYVGA_9RBJEhANFU8-10" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+atualizarGrafico():void" vertex="1">
+          <mxGeometry height="30" width="200" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-58" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKVXYVGA_9RBJEhANFU8-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=diamondThin;startFill=0;endArrow=none;endFill=0;" target="sKVXYVGA_9RBJEhANFU8-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-23" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" value="painelControle" vertex="1">
+          <mxGeometry height="260" width="200" x="490" y="410" as="geometry">
+            <mxRectangle height="26" width="160" x="230" y="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-24" parent="sKVXYVGA_9RBJEhANFU8-23" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-comboPortas:QComboBox" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-25" parent="sKVXYVGA_9RBJEhANFU8-23" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-comboBaudRate:QComboBox" vertex="1">
+          <mxGeometry height="26" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-26" parent="sKVXYVGA_9RBJEhANFU8-23" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-spinTensaoMax:QDoubleSpinBox" vertex="1">
+          <mxGeometry height="22" width="200" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-27" parent="sKVXYVGA_9RBJEhANFU8-23" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-botaoConectar:QPushButtom" vertex="1">
+          <mxGeometry height="22" width="200" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-28" parent="sKVXYVGA_9RBJEhANFU8-23" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-indicadorStatus:QLabel" vertex="1">
+          <mxGeometry height="22" width="200" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-29" parent="sKVXYVGA_9RBJEhANFU8-23" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-mLeitorSerial:LeitorSerial" vertex="1">
+          <mxGeometry height="22" width="200" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-31" parent="sKVXYVGA_9RBJEhANFU8-23" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="10" width="200" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-32" parent="sKVXYVGA_9RBJEhANFU8-23" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+tensaoMaxima():double&#xa;" vertex="1">
+          <mxGeometry height="22" width="200" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-33" parent="sKVXYVGA_9RBJEhANFU8-23" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+conectarArduino():void" vertex="1">
+          <mxGeometry height="22" width="200" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-34" parent="sKVXYVGA_9RBJEhANFU8-23" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+atualizarPortasCOM():void" vertex="1">
+          <mxGeometry height="30" width="200" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-35" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" value="leitorSerial" vertex="1">
+          <mxGeometry height="200" width="200" x="490" y="760" as="geometry">
+            <mxRectangle height="26" width="160" x="230" y="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-36" parent="sKVXYVGA_9RBJEhANFU8-35" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-mPorta:QSerialPort" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-37" parent="sKVXYVGA_9RBJEhANFU8-35" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="-mBuffer:QString" vertex="1">
+          <mxGeometry height="26" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-42" parent="sKVXYVGA_9RBJEhANFU8-35" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="10" width="200" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-43" parent="sKVXYVGA_9RBJEhANFU8-35" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+conectar(porta,baud):bool" vertex="1">
+          <mxGeometry height="22" width="200" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-44" parent="sKVXYVGA_9RBJEhANFU8-35" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+desconectar():void" vertex="1">
+          <mxGeometry height="22" width="200" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-45" parent="sKVXYVGA_9RBJEhANFU8-35" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+estaConectado():bool" vertex="1">
+          <mxGeometry height="30" width="200" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-46" parent="sKVXYVGA_9RBJEhANFU8-35" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+portaDisponiveis():QStringList" vertex="1">
+          <mxGeometry height="30" width="200" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-47" parent="WIyWlLk6GJQsqaUBKTNV-1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" value="gerenciadorDados" vertex="1">
+          <mxGeometry height="170" width="250" x="70" y="775" as="geometry">
+            <mxRectangle height="26" width="160" x="230" y="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-48" parent="sKVXYVGA_9RBJEhANFU8-47" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-caminhoArquivo:QString" vertex="1">
+          <mxGeometry height="26" width="250" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-50" parent="sKVXYVGA_9RBJEhANFU8-47" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="10" width="250" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-51" parent="sKVXYVGA_9RBJEhANFU8-47" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+salvarPonto(pontoMedição):QList" vertex="1">
+          <mxGeometry height="22" width="250" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-52" parent="sKVXYVGA_9RBJEhANFU8-47" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+carregarDados(caminhoArquivo):QList" vertex="1">
+          <mxGeometry height="22" width="250" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-53" parent="sKVXYVGA_9RBJEhANFU8-47" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" value="+setCaminhoArquivo(caminhoArquivo):void" vertex="1">
+          <mxGeometry height="30" width="250" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="sKVXYVGA_9RBJEhANFU8-59" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sKVXYVGA_9RBJEhANFU8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.48;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=diamondThin;startFill=0;" target="sKVXYVGA_9RBJEhANFU8-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="195" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -20,10 +20,15 @@ Na janela principal, na parte inferior, adicionaram-se dois botões. Um para enc
 | `Qt::Widgets` | Interface gráfica — `QWidget`, `QPushButton`, `QLabel`, `QComboBox`, `QDoubleSpinBox`, `QMessageBox`, layouts |
 | `Qt::Charts` | Gráfico — `QChart`, `QChartView`, `QLineSeries`, `QDateTimeAxis`, `QValueAxis` |
 | `Qt::SerialPort` | Comunicação serial com o Arduino — `QSerialPort`, `QSerialPortInfo` | 
-|
+
 
 ![Protótipo 01](img/dev_1_prototipo1.png)
+
+
+
 <div align="center">
+
+
 
 [Retroceder](projeto.md) | [Avançar](testes.md)
 
