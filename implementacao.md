@@ -24,8 +24,28 @@ Na janela principal, na parte inferior, adicionaram-se dois botões. Um para enc
 
 ![Protótipo 01](img/dev_1_prototipo1.png)
 
+# Log 02:
+Implementou-se a função que faz a leitura serial do arduino.  
+Com o código abaixo, o arduino envia a leitura da tensão analógica para a saída serial que será lido pelo software.
+>[!NOTE]   
+void setup() {
+    Serial.begin(9600);
+}  
+void loop() {  
+    int leitura = analogRead(A0);               // Lê o pino analógico (0-1023)  
+    float tensao = leitura * (12.5 / 1023.0);  // Converte para tensão   
+    Serial.println(tensao);                     
+    delay(1000);                                
+}  
+>
+Além disto, efetuou-se os teste com os botões para a conexão e comunicação com o arduino, que agora está funcionando. O texto fica verde para indicar que a conexão foi efetuada com sucesso.  
+Como "setup" de teste, utilizou-se uma fonte de 12V, um conversor buck, protoboard e 3 resistores para se fazer o divisor resistivo para não queimar aa porta analógica do arduino.
+![Setup_arduino](img/Buck_arduino_protoboard.jpg)
 
-
+Para definir os valores dos resistores deve-se ter em mente que o valor máximo da leitura analógica do arduino é 5V. Então basta fazer um ralação de modo que 5V represente o valor máximo de tensão que será fornecida pela placa solar.
+![Setup_arduino](img/divisor_resistivo_R1.png)
+Foi realizado um teste para ver se o gráfico plotava o valor entregado pelo conversor buck.
+![Teste_arduino](img/Teste_arduino.png)
 <div align="center">
 
 

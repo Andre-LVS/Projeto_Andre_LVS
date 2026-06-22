@@ -13,7 +13,7 @@ JanelaPrincipal::JanelaPrincipal(QWidget *parent)
 
     //Painel Lateral + Arduino======================================================
     painel  = new PainelControle(this);
-/*
+
     // Conecta tensão recebida do Arduino ao gráfico
     connect(painel,  &PainelControle::novaTensao,
             grafico, &graficoPlotter::receberTensao);
@@ -21,7 +21,7 @@ JanelaPrincipal::JanelaPrincipal(QWidget *parent)
     // Conecta mudança de tensão máxima ao gráfico
     connect(painel,  &PainelControle::tensaoMaximaAlterada,
             grafico, &graficoPlotter::setTensaoMaxima);
-*/
+
 
     //Botões inferiores===============================================================
 

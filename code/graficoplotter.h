@@ -13,11 +13,11 @@ class graficoPlotter : public QWidget
 public:
     explicit graficoPlotter(QWidget *parent = nullptr);
     //arduino
-    //void receberTensao(double tensao);      // Recebe dado real do Arduino
-    //void setTensaoMaxima(double maxima);    // Ajusta o eixo Y
+    void receberTensao(double tensao);      // Recebe dado real do Arduino
+    void setTensaoMaxima(double maxima);    // Ajusta o eixo Y
 
 private slots:
-    void atualizarGrafico();
+    //void atualizarGrafico();
 
 
 private:

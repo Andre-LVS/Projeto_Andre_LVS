@@ -123,7 +123,7 @@ graficoPlotter::graficoPlotter(QWidget *parent)
     eixoX->setMin(horarioInicio);                       // Começa no horário atual
     eixoX->setMax(horarioInicio.addSecs(JANELA_MAX));   // Termina 24h depois
    // eixoX->setRange(0,JANELA_MAX);//exibe as 24 horas;
-    //eixoX->setLabelFormat("%d");// Formato inteiro nos rótulos
+    //eixoX->setLabelFormat("%d");// Formato inteiro
     eixoX->setTickCount(13);            // Uma marcação a cada 2h aprox.
     grafico->addAxis(eixoX, Qt::AlignBottom);//Anexa o eixo X no gráfico
     serie->attachAxis(eixoX);
@@ -155,7 +155,7 @@ graficoPlotter::graficoPlotter(QWidget *parent)
 
     //----------------------
     timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &graficoPlotter::atualizarGrafico); //Quando o timer disparar chama a função
+    //connect(timer, &QTimer::timeout, this, &graficoPlotter::atualizarGrafico); //Quando o timer disparar chama a função
     timer->start(1000);//Dispara a cada 1000ms->1s
 
     //-------------------
@@ -166,7 +166,7 @@ graficoPlotter::graficoPlotter(QWidget *parent)
     setLayout(layout);                           // Aplica o layout ao widget
 }
 
-
+/*
 //Esta função gera um valor aleatório para tensar o programa.
 //Deletar esta função quando implementar o arduino
 void graficoPlotter::atualizarGrafico(){
@@ -186,10 +186,9 @@ void graficoPlotter::atualizarGrafico(){
 
     tempoDecorrido++;
 
+}*/
 
-}
 
-/*
 // Receber valor da leitura analógica do arduino
 // BLOCO: Recebe tensão real do Arduino (substitui o valor randômico)
 void graficoPlotter::receberTensao(double tensao)
@@ -209,7 +208,7 @@ void graficoPlotter::setTensaoMaxima(double maxima)
     eixoY->setMax(maxima); // Atualiza o eixo Y com o novo valor máximo
 
 }
-*/
+
 
 void graficoPlotter::carregarDadosAnteriores()
 {
