@@ -16,6 +16,10 @@ public:
     void receberTensao(double tensao);      // Recebe dado real do Arduino
     void setTensaoMaxima(double maxima);    // Ajusta o eixo Y
 
+    QPixmap exportarComoImagem() {
+        return viewGrafico->grab();
+    }
+
 private slots:
     //void atualizarGrafico();
 

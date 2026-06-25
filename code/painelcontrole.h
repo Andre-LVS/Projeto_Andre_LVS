@@ -4,6 +4,12 @@
 #include <QWidget>
 #include <QtWidgets>
 #include "leitorserial.h"
+#include "graficoplotter.h"
+
+//--Para exporta o gráfico e salvar em um local--
+#include <QPixmap>
+#include <QFileDialog>
+#include <QMessageBox>
 
 // ─────────────────────────────────────────────
 //  BLOCO: Widget lateral de controle
@@ -19,12 +25,14 @@ public:
 signals:
     void novaTensao(double tensao);       // Repassado do LeitorSerial para o gráfico
     void tensaoMaximaAlterada(double v);  // Emitido quando o usuário muda o valor máximo
+     void solicitaExportacao();
 
 private slots:
     void onBtnAtualizarPortas();          // Atualiza a lista de portas disponíveis
     void onBtnConectar();                 // Conecta ou desconecta o Arduino
     void onErroConexao(const QString &e); // Exibe mensagem de erro
     void onTensaoMaximaAlterada();        // Lê e emite o novo valor máximo
+    void onBtnExportar(); //exporta um print do gráfico e cvs com os dados
 
 private:
     // BLOCO: Seção de tensão máxima
@@ -48,6 +56,9 @@ private:
 
     // BLOCO: Objeto de comunicação serial
     LeitorSerial  *mLeitorSerial;
+
+    //Botão exportar
+    QPushButton *btnExportar;
 };
 
 #endif // PAINELCONTROLE_H

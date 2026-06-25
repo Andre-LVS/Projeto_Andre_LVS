@@ -54,6 +54,11 @@ PainelControle::PainelControle(QWidget *parent)
     lblStatus->setAlignment(Qt::AlignCenter);
     lblStatus->setStyleSheet("color: red; font-weight: bold;"); // Vermelho = desconectado
 
+    // ---Seção: Botão exportar-----------------
+
+    btnExportar = new QPushButton("Exportar");
+    connect(btnExportar, &QPushButton::clicked, this, &PainelControle::onBtnExportar);
+
     // ── Monta o layout vertical ───────────────
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->setAlignment(Qt::AlignTop);     // Alinha os widgets ao topo
@@ -65,15 +70,19 @@ PainelControle::PainelControle(QWidget *parent)
     layout->addWidget(lblPorta);
     layout->addWidget(comboPortas);
     layout->addWidget(btnAtualizar);
-    layout->addSpacing(16);
+    layout->addSpacing(5);
 
     layout->addWidget(lblBaudRate);
     layout->addWidget(comboBaudRate);
-    layout->addSpacing(16);
+    layout->addSpacing(3);
 
     layout->addWidget(btnConectar);
     layout->addSpacing(8);
     layout->addWidget(lblStatus);
+
+    layout->addSpacing(35);
+    layout->addWidget(btnExportar);
+
 
     setLayout(layout);
 
@@ -142,3 +151,11 @@ void PainelControle::onTensaoMaximaAlterada()
 {
     emit tensaoMaximaAlterada(spinTensaoMax->value()); // Notifica o gráfico
 }
+// ─────────────────────────────────────────────
+//  BLOCO:Exporta imagem do grafico e cvs
+// ─────────────────────────────────────────────
+void PainelControle::onBtnExportar()
+{
+emit solicitaExportacao();
+
+        }

@@ -4,7 +4,7 @@ JanelaPrincipal::JanelaPrincipal(QWidget *parent)
     : QWidget(parent)
 {
     //titulo============================================================
-    tituloProjeto = new QLabel("<h1> Título do projeto</h1>");
+    tituloProjeto = new QLabel("<h1> Monitor de Painel Solar </h1>");
     tituloProjeto->setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
 
     //Gráfico===================================================================
@@ -36,10 +36,34 @@ JanelaPrincipal::JanelaPrincipal(QWidget *parent)
 
     //=================================================================================
 
+    //-----------------exportação grafico--------------------
+
+
+    connect(painel, &PainelControle::solicitaExportacao, this, [this]() {
+
+        // Abre a janela de salvamento usando a JanelaPrincipal (this) como pai
+        QString filePath = QFileDialog::getSaveFileName(this, "Save Graph", "grafico.png", "PNG Images (*.png);;JPEG Images (*.jpg)");
+
+        if (!filePath.isEmpty() && grafico) {
+            // Chama o método público que criamos na classe do gráfico
+            QPixmap pixmap = grafico->exportarComoImagem();
+
+            if (pixmap.save(filePath)) {
+                QMessageBox::information(this, "Sucesso", "Gráfico exportado com sucesso!");
+            } else {
+                QMessageBox::warning(this, "Erro", "Falha ao exportar o gráfico.");
+            }
+        }
+    });
+
+
+
+    //-------------------------------------
+
     // BLOCO: Layout horizontal — painel ocupa 1/3, gráfico 2/3
     conteudoLayout = new QHBoxLayout();
-    conteudoLayout->addWidget(painel,  1); // stretch 1 = 1/3
-    conteudoLayout->addWidget(grafico, 2); // stretch 2 = 2/3
+    conteudoLayout->addWidget(painel,  0); // stretch 1 = 1/3
+    conteudoLayout->addWidget(grafico, 1); // stretch 2 = 2/3
 
 
     mainLayout = new QVBoxLayout;
