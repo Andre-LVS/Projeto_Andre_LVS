@@ -1,5 +1,6 @@
 #include "painelcontrole.h"
 
+
 // ─────────────────────────────────────────────
 //  BLOCO: Construtor — monta o painel lateral
 // ─────────────────────────────────────────────

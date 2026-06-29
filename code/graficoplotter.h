@@ -12,6 +12,8 @@ class graficoPlotter : public QWidget
     Q_OBJECT
 public:
     explicit graficoPlotter(QWidget *parent = nullptr);
+    
+public slots:
     //arduino
     void receberTensao(double tensao);      // Recebe dado real do Arduino
     void setTensaoMaxima(double maxima);    // Ajusta o eixo Y

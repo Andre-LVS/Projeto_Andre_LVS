@@ -84,11 +84,11 @@ protected:
         QChartView::mouseMoveEvent(event);
     }
 
-    // BLOCO: Fim do rubber band (zoom por seleção) — corrige limites
+    // BLOCO:zoom por seleção — corrige limites
     void mouseReleaseEvent(QMouseEvent *event) override
     {
         QChartView::mouseReleaseEvent(event);
-        corrigirLimites(); // Verifica os dois eixos após o rubber band zoom
+        corrigirLimites();
     }
 
 public:
@@ -104,8 +104,10 @@ graficoPlotter::graficoPlotter(QWidget *parent)
 
     setWindowTitle("Monito de tensão"); //define titulo da janela
 
-    tempoDecorrido = 0;
-    horarioInicio  = QDateTime::currentDateTime(); // Captura horário atual do sistema
+    //tempoDecorrido = 0;
+    //horarioInicio  = QDateTime::currentDateTime(); // Captura horário atual do sistema
+    horarioInicio = QDateTime(QDate::currentDate(),QTime(6,0,0));
+    tempoDecorrido = horarioInicio.secsTo(QDateTime::currentDateTime());
 
     serie = new QLineSeries(); //Cria a linha do gráfico
     serie->setName("Tensão(V)"); //nome exibido na legenda
