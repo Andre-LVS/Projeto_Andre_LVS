@@ -138,6 +138,9 @@ Pré-condição:
 ## Diagrama de classes:
 ![Diagrama Classes 01](img/Diagrama_Classes_mk1.drawio.png).
 
+## Diagrama de Sequencia:
+![Teste_arduino](img/diagrama_sequencia_monitor_solar_v2.png)
+
 <div align="center">
 
 [Retroceder](README.md) | [Avançar](projeto.md)
