@@ -4,7 +4,7 @@
  Relatar o processo de implementação do problemas, incluindo as
  ferramentas e bibliotecas utilizadas
 >
-# Log 01:
+## Log 01: Janela principal
 Implementou-se um protótipo da janela com alguns widgets para uma primeira visualização.
 À esquerda localiza-se o painel de controle. Acima, uma barra permite que o operador defina a tensão máxima da placa solar. O valor definido deve alterar a ordenada do gráfico em tempo real. Ainda à esquerda, foram inseridos os botões e comandos/dados necessários para a conexão com o Arduino (ainda não testada).
 
@@ -110,7 +110,7 @@ QDateTime horario = QDateTime::fromMSecsSinceEpoch(
 
 ---
 
-# Log 05:
+## Log 04: leitura serial do arduino.
 Implementou-se a função que faz a leitura serial do arduino.  
 Com o código abaixo, o arduino envia a leitura da tensão analógica para a saída serial que será lido pelo software.
 ```cpp 
@@ -137,7 +137,7 @@ Foi realizado um teste para ver se o gráfico plotava o valor entregado pelo con
 ---
 
 
-## Log 06: Eixo X fixo das 06:00 às 06:00
+## Log 05: Eixo X fixo das 06:00 às 06:00
 
 Para que o gráfico sempre represente um ciclo solar completo — da manhã
 de um dia até a manhã do seguinte — o horário de início foi fixado às
@@ -156,7 +156,7 @@ horas depois do início da janela.
 
 ---
 
-## Log 07: Exportação de dados e imagem
+## Log 06: Exportação de dados e imagem
 
 Adicionou-se ao painel lateral um botão **Exportar** que permite ao usuário
 salvar o gráfico:
