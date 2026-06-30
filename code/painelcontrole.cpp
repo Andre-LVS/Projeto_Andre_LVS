@@ -1,12 +1,16 @@
 #include "painelcontrole.h"
 
 
+
 // ─────────────────────────────────────────────
 //  BLOCO: Construtor — monta o painel lateral
 // ─────────────────────────────────────────────
 PainelControle::PainelControle(QWidget *parent)
     : QWidget{parent}
 {
+    //------------
+
+    //----------
     // --- Sub-bloco: Objeto de leitura serial ---
     mLeitorSerial = new LeitorSerial(this);
 

@@ -1,6 +1,7 @@
 #include "graficoplotter.h"
 #include <QRandomGenerator> //Só para gerar numeros aleatórios para testar o gráfico
 #include <QVBoxLayout>
+#include <QToolTip>
 
 
 // ─────────────────────────────────────────────
@@ -81,6 +82,25 @@ protected:
             corrigirLimites(); // Verifica os dois eixos após cada passo do arraste
             mUltimoPonto = event->pos();
         }
+
+        //----------
+        // --- Sub-bloco: Tooltip com horário e tensão ---
+        // Converte posição do mouse para coordenadas do gráfico
+        QPointF valorGrafico = chart()->mapToValue(event->pos()); // Coordenada em unidades do gráfico
+
+        // Converte o valor X (ms desde epoch) para QDateTime legível
+        QDateTime horario = QDateTime::fromMSecsSinceEpoch(
+            static_cast<qint64>(valorGrafico.x()));
+
+        // Monta o texto do tooltip
+        QString texto = QString("Horário: %1\nTensão: %2 V")
+                            .arg(horario.toString("hh:mm:ss"))      // Formata o horário
+                            .arg(valorGrafico.y(), 0, 'f', 2);      // Formata tensão com 2 casas decimais
+
+        // Exibe o tooltip próximo ao cursor
+        QToolTip::showText(event->globalPosition().toPoint(), texto, this);
+        //----------
+
         QChartView::mouseMoveEvent(event);
     }
 
@@ -221,19 +241,19 @@ void graficoPlotter::carregarDadosAnteriores()
 
     if (pontos.isEmpty()) return;
 
-    // --- Sub-bloco: Insere os pontos antigos na série ---
+    // --- Sub-bloco: Insere os pontos antigos  ---
     for (const PontoMedicao &p : pontos) {
         serie->append(p.horario.toMSecsSinceEpoch(), p.tensao); // Plota no gráfico
     }
 
     // --- Sub-bloco: Ajusta o horário para continuar de onde parou ---
-    // O horário de início continua sendo o início do dia (primeiro ponto salvo)
-    horarioInicio  = pontos.first().horario;            // Início real do dia
-    tempoDecorrido = horarioInicio.secsTo(QDateTime::currentDateTime());
 
-    // --- Sub-bloco: Ajusta o eixo X para cobrir as 24h a partir do início ---
-    eixoX->setMin(horarioInicio);
-    eixoX->setMax(horarioInicio.addSecs(JANELA_MAX));
+    eixoX->setMin(horarioInicio);                     // Sempre 06:00 do dia atual
+    eixoX->setMax(horarioInicio.addSecs(JANELA_MAX)); // Sempre 06:00 do dia seguinte
+
+    // --- Sub-bloco: Atualiza o limite do zoom no view interativo ---
+    ChartViewInterativo *view = static_cast<ChartViewInterativo*>(viewGrafico);
+    view->mHorarioInicio = horarioInicio;
 }
 
 

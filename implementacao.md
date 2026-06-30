@@ -13,46 +13,19 @@ Implementou-se um protótipo da janela com alguns widgets para uma primeira visu
 Na janela principal, na parte inferior, adicionaram-se dois botões. Um para encerrar o programa (Sair) e outro que descreve o propósito do programa (Sobre). 
 
 ## bibliotecas utilizadas:
-
 | Módulo | Para que serve no projeto |
 |---|---|
-| `Qt::Core` | Base do Qt — `QTimer`, `QDateTime`, `QFile`, `QDir`, `QString`, `QList` |
-| `Qt::Widgets` | Interface gráfica — `QWidget`, `QPushButton`, `QLabel`, `QComboBox`, `QDoubleSpinBox`, `QMessageBox`, layouts |
+| `Qt::Core` | Base do Qt — `QTimer`, `QDateTime`, `QFile`, `QDir`, `QString`, `QList`,  `QCoreApplication` |
+| `Qt::Widgets` | Interface gráfica — `QWidget`, `QPushButton`, `QLabel`, `QComboBox`, `QDoubleSpinBox`, `QMessageBox`, `QFileDialog`, `QToolTip`, layouts |
 | `Qt::Charts` | Gráfico — `QChart`, `QChartView`, `QLineSeries`, `QDateTimeAxis`, `QValueAxis` |
-| `Qt::SerialPort` | Comunicação serial com o Arduino — `QSerialPort`, `QSerialPortInfo` | 
+| `Qt::SerialPort` | Comunicação serial com o Arduino — `QSerialPort`, `QSerialPortInfo` |
 
 
 ![Protótipo 01](img/dev_1_prototipo1.png)
 
-# Log 02:
-Implementou-se a função que faz a leitura serial do arduino.  
-Com o código abaixo, o arduino envia a leitura da tensão analógica para a saída serial que será lido pelo software.
-```cpp 
-void setup() {
-    Serial.begin(9600);
-}  
-void loop() {  
-    int leitura = analogRead(A0);// Lê o pino analógico (0-1023)  
-    float tensao = leitura * (12.5 / 1023.0);  // Converte para tensão   
-    Serial.println(tensao);                     
-    delay(1000);                                
-}  
-```
- aw
-Além disto, efetuou-se os teste com os botões para a conexão e comunicação com o arduino, que agora está funcionando. O texto fica verde para indicar que a conexão foi efetuada com sucesso.  
-Como "setup" de teste, utilizou-se uma fonte de 12V, um conversor buck, protoboard e 3 resistores para se fazer o divisor resistivo para não queimar aa porta analógica do arduino.
-![Setup_arduino](img/Buck_arduino_protoboard.jpg)
-
-Para definir os valores dos resistores deve-se ter em mente que o valor máximo da leitura analógica do arduino é 5V. Então basta fazer um ralação de modo que 5V represente o valor máximo de tensão que será fornecida pela placa solar.
-![Setup_arduino](img/divisor_resistivo_R1.png)
-Foi realizado um teste para ver se o gráfico plotava o valor entregado pelo conversor buck.
-![Teste_arduino](img/Teste_arduino.png)
 
 
----
-
-
-## Log 03: Persistência de dados e continuidade do gráfico
+## Log 02: Persistência de dados e continuidade do gráfico
 
 Identificou-se um problema de usabilidade: ao encerrar e reabrir o programa,
 o gráfico reiniciava do zero, perdendo todas as medições anteriores do dia.
@@ -81,7 +54,7 @@ tempoDecorrido = horarioInicio.secsTo(QDateTime::currentDateTime());
 
 ---
 
-## Log 04: Melhorias de interatividade no gráfico
+## Log 03: Melhorias de interatividade no gráfico
 
 ### Zoom centrado no cursor do mouse
 
@@ -137,7 +110,34 @@ QDateTime horario = QDateTime::fromMSecsSinceEpoch(
 
 ---
 
-## Log 05: Eixo X fixo das 06:00 às 06:00
+# Log 05:
+Implementou-se a função que faz a leitura serial do arduino.  
+Com o código abaixo, o arduino envia a leitura da tensão analógica para a saída serial que será lido pelo software.
+```cpp 
+void setup() {
+    Serial.begin(9600);
+}  
+void loop() {  
+    int leitura = analogRead(A0);// Lê o pino analógico (0-1023)  
+    float tensao = leitura * (12.5 / 1023.0);  // Converte para tensão   
+    Serial.println(tensao);                     
+    delay(1000);                                
+}  
+```
+ 
+Além disto, efetuou-se os teste com os botões para a conexão e comunicação com o arduino, que agora está funcionando. O texto fica verde para indicar que a conexão foi efetuada com sucesso.  
+Como "setup" de teste, utilizou-se uma fonte de 12V, um conversor buck, protoboard e 3 resistores para se fazer o divisor resistivo para não queimar aa porta analógica do arduino.
+![Setup_arduino](img/Buck_arduino_protoboard.jpg)
+
+Para definir os valores dos resistores deve-se ter em mente que o valor máximo da leitura analógica do arduino é 5V. Então basta fazer um ralação de modo que 5V represente o valor máximo de tensão que será fornecida pela placa solar.
+![Setup_arduino](img/divisor_resistivo_R1.png)
+Foi realizado um teste para ver se o gráfico plotava o valor entregado pelo conversor buck.
+![Teste_arduino](img/Teste_arduino.png)
+
+---
+
+
+## Log 06: Eixo X fixo das 06:00 às 06:00
 
 Para que o gráfico sempre represente um ciclo solar completo — da manhã
 de um dia até a manhã do seguinte — o horário de início foi fixado às
@@ -156,50 +156,21 @@ horas depois do início da janela.
 
 ---
 
-## Log 06: Exportação de dados e imagem
+## Log 07: Exportação de dados e imagem
 
 Adicionou-se ao painel lateral um botão **Exportar** que permite ao usuário
-salvar dois arquivos simultaneamente:
+salvar o gráfico:
 
 - **Imagem PNG** — captura do gráfico usando `QPixmap::grab()` sobre o
-  `QChartView`
-- **CSV** — cópia do arquivo de medições do dia, usando `QFile::copy()`
-
-O usuário escolhe o nome base pelo `QFileDialog`; as extensões `.png` e
-`.csv` são adicionadas automaticamente. Caso o arquivo de destino já
-exista, ele é removido antes da cópia para evitar falha silenciosa, já
-que `QFile::copy()` não sobrescreve arquivos existentes.
+  `QChartView`  
 
 A responsabilidade de abrir o diálogo e executar a exportação foi mantida
 na `JanelaPrincipal`, que tem acesso tanto ao `graficoPlotter` quanto ao
 `GerenciadorDados`. O `PainelControle` apenas emite o sinal
-`solicitaExportacao()`, mantendo o desacoplamento entre as classes.
+`solicitaExportacao()`.
 
 ---
 
-## Log 07: Persistência das configurações do usuário
-
-Identificou-se que o valor de tensão máxima definido pelo usuário no
-`QDoubleSpinBox` era perdido ao fechar o programa, voltando sempre ao
-padrão de 20,64 V.
-
-Para resolver isso, utilizou-se a classe `QSettings` do Qt, que armazena
-pares chave-valor de forma persistente no sistema:
-
-```cpp
-// Salvar ao alterar
-QSettings settings("MonitorSolar", "config");
-settings.setValue("tensaoMaxima", valor);
-
-// Restaurar ao iniciar
-double valorSalvo = settings.value("tensaoMaxima", 20.64).toDouble();
-spinTensaoMax->setValue(valorSalvo);
-```
-
-No Linux, o arquivo é gravado automaticamente em
-`~/.config/MonitorSolar/config.ini`. No Windows, os dados são armazenados
-no registro do sistema. Nenhuma configuração de caminho é necessária —
-o Qt gerencia isso de forma transparente por plataforma.
 
 <div align="center">
 
