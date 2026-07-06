@@ -140,7 +140,7 @@ graficoPlotter::graficoPlotter(QWidget *parent)
 
     //----------------------
     eixoX = new QDateTimeAxis();
-    eixoX->setTitleText("Horário)");
+    eixoX->setTitleText("Horário");
     eixoX->setFormat("hh:mm");
     eixoX->setMin(horarioInicio);                       // Começa no horário atual
     eixoX->setMax(horarioInicio.addSecs(JANELA_MAX));   // Termina 24h depois
@@ -189,7 +189,7 @@ graficoPlotter::graficoPlotter(QWidget *parent)
 }
 
 /*
-//Esta função gera um valor aleatório para tensar o programa.
+//Esta função gera um valor aleatório para testar o programa.
 //Deletar esta função quando implementar o arduino
 void graficoPlotter::atualizarGrafico(){
 
